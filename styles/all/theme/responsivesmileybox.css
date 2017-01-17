@@ -1,0 +1,21 @@
+.wrap-bouton-smiley-box{
+	text-align: center;
+	display: none;
+}
+
+#postingbox.responsive-smiley-box .wrap-bouton-smiley-box {
+	display: block;
+}
+
+#postingbox:not(.responsive-smiley-box) #smiley-box {
+	display: block !important;
+}
+
+#postingbox.responsive-smiley-box #smiley-box {
+	display: none;
+}
+
+input.button2.bbcode-smiley:focus {
+    border-color: inherit;
+    color: inherit;
+}

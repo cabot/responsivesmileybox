@@ -1,0 +1,32 @@
+<!-- IF S_SMILIES_ALLOWED and .smiley -->
+<script type="text/javascript">
+//<![CDATA[
+var $largeur = $(window),
+   $postingbox = $('#postingbox');
+   
+function resize() {
+   if ($largeur.width() <= 700) {
+      return $postingbox.addClass('responsive-smiley-box');
+   }
+   $postingbox.removeClass('responsive-smiley-box');
+}
+
+$largeur.resize(resize).trigger('resize');
+
+function change_smiley()
+{
+	phpbb.toggleDisplay('smiley-box');
+	e = document.getElementById('smiley-box');
+
+	if (e.style.display == 'block')
+	{
+		document.getElementById('bbsmiley').value = 'Masquer les smileys';
+	}
+	else
+	{
+		document.getElementById('bbsmiley').value = 'Smileys';
+	}
+}
+//]]>
+</script> 
+<!-- ENDIF -->

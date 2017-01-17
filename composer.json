@@ -1,0 +1,26 @@
+{
+    "name": "cabot/responsivesmileybox",
+    "type": "phpbb-extension",
+    "description": "Ajoute un bouton pour afficher/masquer les smileys sur les résos ≤ 700px.",
+    "homepage": "http://cabotweb.fr",
+    "version": "1.0.0",
+    "keywords": [ "phpbb", "extension" ],
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "cabot",
+            "homepage": "http://cabotweb.fr",
+            "role": "SuhiMaker"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+		"composer/installers": "~1.0"
+    },
+    "extra": {
+        "display-name": "Responsive Smiley Box",
+        "soft-require": {
+            "phpbb/phpbb": "3.1"
+        }
+    }
+}
